@@ -1,0 +1,50 @@
+.display-none {
+  display: none; }
+
+body {
+  background-color: #FFF; }
+
+main .navigation {
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between;
+  align-items: center; }
+  main .navigation .navigation--ul {
+    background-color: #2C2830;
+    position: fixed;
+    width: 100%;
+    height: calc(100vh - 80px);
+    left: 0;
+    top: 80px;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 24px;
+    padding: 40px 24px;
+    box-sizing: border-box;
+    background-image: url(./images/bg-pattern-mobile-nav.svg);
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    transform: translateX(100%);
+    transition: all 0.4s; }
+    main .navigation .navigation--ul li:last-child {
+      width: 100%;
+      height: 56px;
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #fff; }
+    main .navigation .navigation--ul a {
+      color: #FFF;
+      font-size: 20px;
+      font-weight: 700;
+      font-family: "Karla", sans-serif; }
+  main .navigation .close-open button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer; }

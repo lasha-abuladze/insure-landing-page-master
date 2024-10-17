@@ -1,0 +1,103 @@
+
+
+
+$karlaFont: "Karla", sans-serif;
+$dmfont: "DM Serif Display", serif;
+
+
+@mixin flexcolumn {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+@mixin flexrow {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+@mixin button-gen {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+
+.display-none {
+    display: none;
+}
+
+
+body {
+    background-color: #FFF;
+}
+
+
+
+
+main {
+
+    
+    .navigation {
+
+        padding: 24px;
+        box-sizing: border-box;
+
+        @include flexrow();
+        justify-content: space-between;
+        align-items: center;
+
+        .navigation--ul {
+            background-color: #2C2830;
+            position: fixed;
+            width: 100%;
+            height: calc(100vh - 80px);
+            left: 0;
+            top: 80px;
+            
+            @include flexcolumn();
+            align-items: center;
+            gap: 24px;
+            padding: 40px 24px;
+            box-sizing: border-box;      
+            
+            background-image: url(./images/bg-pattern-mobile-nav.svg);
+            background-size: 100% 200px;
+            background-repeat: no-repeat;
+            background-position-y: 100%;
+
+            transform: translateX(100%);
+            transition: all 0.4s;
+
+
+            li {
+                &:last-child {
+                    width: 100%;
+                    height: 56px;
+                    @include flexrow();
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid #fff;
+                }
+            }
+
+            a {
+                color: #FFF;
+                font-size: 20px;
+                font-weight: 700;
+                font-family: $karlaFont;
+            }
+        }
+
+
+        .close-open {
+            button {
+                @include button-gen();
+                cursor: pointer;
+            }
+        }
+
+    }
+
+
+
+}
