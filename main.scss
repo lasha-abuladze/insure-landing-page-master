@@ -99,49 +99,80 @@ main {
 
     }
 
-    .family-img {
+    .title {
         width: 100%;
-        height: 465px;
-        background-image: url(./images/image-intro-mobile.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-
-    .main-title {
-        width: 100%;
-        background-color: #2D2641;
-        color: #fff;
         text-align: center;
-        padding: 93px 24px;
+        background-color: #2D2641;
+        padding: 493px 24px 93px 24px;
         box-sizing: border-box;
-        
+        color: #fff;
+
+        position: relative;
+
+        .family-img {
+            width: 100%;
+            height: 465px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+
+            background-image: url(./images/image-intro-mobile.jpg);
+            background-size: cover;
+            background-position: left;
+            z-index: 1;
+        }
+
+        .title-background--1 {
+            position: absolute;
+            left: 0;
+            bottom: 29.5%;
+            z-index: 0;
+        }
+
+        .title-background--2 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 0;
+            transform: translateY(60%);
+        }
+
         h1 {
-            font-family: $dmfont;
-            font-weight: 400;
             font-size: 46px;
+            font-weight: 400;
+            font-family: $dmfont;
             margin-bottom: 16px;
 
-            span {
-                display: block;
-            }
         }
 
         p {
-            font-family: $karlaFont;
+            position: relative;
+            z-index: 3;
             font-size: 16px;
             font-weight: 400;
+            font-family: $karlaFont;
             line-height: 26px;
             margin-bottom: 32px;
         }
-
+        
         button {
             width: 146px;
-            height: 48px;
+            height: 40px;
             @include button-gen();
-            color: #fff;
             border: 1px solid #fff;
+            box-sizing: border-box;
+
+            color: #fff;
+            font-size: 11px;
+            font-weight: 400;
+            letter-spacing: 1.5px;
         }
     }
+
+
+
 
 
 
