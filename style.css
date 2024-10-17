@@ -14,6 +14,7 @@ main .navigation {
   main .navigation .navigation--ul {
     background-color: #2C2830;
     position: fixed;
+    z-index: 5;
     width: 100%;
     height: calc(100vh - 80px);
     left: 0;
@@ -107,3 +108,39 @@ main .title {
     font-size: 11px;
     font-weight: 400;
     letter-spacing: 1.5px; }
+
+.our-advantages--section {
+  text-align: center;
+  padding: 0px 24px;
+  padding-top: 140px;
+  padding-bottom: 150px;
+  box-sizing: border-box; }
+  .our-advantages--section .line {
+    width: 150px;
+    margin: auto;
+    margin-bottom: 40px;
+    height: 1px;
+    background-color: #C396C6; }
+  .our-advantages--section h2 {
+    font-family: "DM Serif Display", serif;
+    color: #2C2830;
+    font-size: 46px;
+    font-weight: 400;
+    margin-bottom: 80px; }
+  .our-advantages--section h3 {
+    font-family: "DM Serif Display", serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #2C2830;
+    margin-top: 32px;
+    margin-bottom: 16px; }
+  .our-advantages--section p {
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #837D88; }
+  .our-advantages--section .our-advantages--divs {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 56px; }
