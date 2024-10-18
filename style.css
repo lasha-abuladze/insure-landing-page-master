@@ -86,7 +86,9 @@ main .title {
     font-size: 46px;
     font-weight: 400;
     font-family: "DM Serif Display", serif;
-    margin-bottom: 16px; }
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 5 !important; }
   main .title p {
     position: relative;
     z-index: 3;
@@ -111,9 +113,7 @@ main .title {
 
 .our-advantages--section {
   text-align: center;
-  padding: 0px 24px;
-  padding-top: 140px;
-  padding-bottom: 150px;
+  padding: 140px 24px;
   box-sizing: border-box; }
   .our-advantages--section .line {
     width: 150px;
@@ -144,3 +144,38 @@ main .title {
     display: flex !important;
     flex-direction: column !important;
     gap: 56px; }
+
+.how-we-work--div {
+  width: calc(100% - 48px);
+  background-color: #2D2641;
+  margin: auto;
+  color: #fff;
+  text-align: center;
+  padding: 72px 24px;
+  box-sizing: border-box;
+  position: relative; }
+  .how-we-work--div h2 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2; }
+  .how-we-work--div button {
+    width: 146px;
+    height: 40px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1.5px; }
+  .how-we-work--div img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0; }
