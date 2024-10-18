@@ -143,7 +143,7 @@ main {
             font-family: $dmfont;
             margin-bottom: 16px;
             position: relative;
-            z-index: 5 !important;
+            z-index: 4 !important;
         }
 
         p {
@@ -171,7 +171,6 @@ main {
     }
 
 }
-
 
 .our-advantages--section{
 
@@ -257,5 +256,71 @@ main {
         top: 0;
         right: 0;
         z-index: 0;
+    }
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 140px;
+    background-color: #FAFAFA;
+    position: relative;
+
+    padding: 88px 24px;
+    box-sizing: border-box;
+
+    header {
+
+        position: relative;
+        z-index: 2;
+        .social-medias {
+            margin-top: 32px;
+            @include flexrow();
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+    }
+
+    .ul-container {
+        margin-top: 40px;
+        padding: 40px 24px;
+        box-sizing: border-box;
+
+        @include flexcolumn();
+        align-items: center;
+        gap: 40px;
+
+
+        ul {
+            li {
+                font-size: 13px;
+                font-weight: 700;   
+                font-family: $karlaFont;
+                margin-bottom: 16px;
+
+                a {
+                    color: #2D2641;;
+                }
+
+                &:first-child {
+                    margin: 0;
+                    margin-bottom: 36px;
+                    a {
+                        color: #837D88;
+                    }
+                }
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            z-index: 0;
+        }
     }
 }
